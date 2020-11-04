@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <style>
+            body{
+  text-align: center;
+}
+#survey-form{
+  background-color: lightgrey;
+  width: 1200px;
+  margin: 0 auto;
+}
+.row-tab{
+  display: block;
+  padding-top: 20px;
+}
+.label-burger{
+  display: inline-block;
+  width: 40%;
+  text-align: right;
+}
+.input-burger{
+  display: inline-block;
+  width: 48%;
+  text-align: left;
+}
+.select-input{
+  display: inline-block;
+  width: 48%;
+  text-align: left;
+}
+.label-select{
+  display: inline-block;
+  width: 40%;
+  text-align: right;
+}
+.labels-radio{
+  display: inline-block;
+  width: 40%;
+  text-align: right;
+}
+.input-radio{
+  display: inline-block;
+  width: 48%;
+  text-align: left;
+}
+        </style>
+
+    </header>
+    <body>
+        <h1 id="title"> Hollywood Beckerry Survery<h1>
+            <form id="survey-form" action="">
+              <div class="row-tab">
+                <div class="label-burger">
+                  <label for="">Name</label>
+                </div>
+                <div class="input-burger">
+                  <input type="text" placeholder="Name">
+                </div>
+              </div>
+              <div class="row-tab">
+                <div class="label-burger">
+                  <label for="">Email</label>
+                </div>
+                <div class="input-burger">
+                  <input type="email" placeholder="Email">
+                </div>
+              </div>
+              <div class="row-tab">
+                <div class="label-burger">
+                  <label for="" min="1" max="1000">Age</label>
+                </div>
+                <div class="input-burger">
+                  <input type="number" placeholder="Age">
+                </div>
+              </div>
+              <div class="row-tab">
+                <div class="label-select">
+                  <label for="">Select Fav Sauce</label>
+                </div>
+                <div class="select-input">
+                  <select name="" id="">
+                    <option value="opt1">Juice</option>
+                    <option value="opt2">Ketchup</option>
+                    <option value="opt3">BBQ</option>
+                    <option value="opt4">Chilli</option>
+                    <option value="opt4">Mayo</option>
+                  </select>
+                </div>
+                <div class="row-tab">
+                <div class="labels-radio">
+                 Location
+                </div>
+                <div class="input-radio">
+                  <div>
+                    <label for="">Liverpool
+                    <input type="radio" name="location">
+                    </label>
+                  </div>
+                  <div>
+                    <label for="">Birmingham
+                    <input type="radio" name="location">
+                    </label>
+                  </div>
+                  <div>
+                    <label for="">Manchester
+                    <input type="radio" name="location">
+                    </label>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </form>
+    </body>
+</html>

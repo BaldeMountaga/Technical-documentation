@@ -1,0 +1,376 @@
+<!DOCTYPE HTML>
+<html>
+    <head><title>Technical Documentation Page</title>
+        <style>
+          *{
+            box-sizing: border-box;
+          }
+                .container {
+                  min-height: 300px;
+                  width: 100%;
+                  background: LightGray;
+                  display: grid;
+                  grid-template-columns: auto 2fr;
+                  grid-template-rows: auto 2fr auto;
+                  grid-gap: 1px;
+                  grid-template-areas:
+                    "advert content"
+                    "advert content"
+                    "advert content";
+                }
+                .item1 {
+                  background: white;
+                  grid-area: content;
+                }
+                .item2 {
+                  background: white;
+                  grid-area: advert;
+                  /*grid-template-rows: 30px 30px 30px 30px;*/
+                  display: grid;
+                }
+                .item3 {
+                  background: white;
+                  grid-area: content;
+                  margin-left: 30px;
+                }        
+               
+                li{
+                  list-style-type: square;
+                }
+                img{
+                  max-width: 100%;
+                  height: auto;
+                  display: block;
+                }
+              .lin{
+                color: green;
+                text-decoration: none;
+              }
+              .lin:hover{
+                color: blueviolet;
+                text-decoration: underline;
+              }
+              #main-doc{
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                background: white;
+                text-align: justify;
+                padding-right: 10px;
+              }
+           /* @media screen and (min-width: 400px){
+                  .container{
+                    grid-template-columns: auto 2fr;
+                    grid-template-rows: auto 2fr auto; /*check this one may be use auto and 2fr only
+                    grid-template-areas:
+                    "advert"
+                    "content"
+                    "content";
+                  }
+              }
+              @media screen and (min-width: 400px){
+                .container{
+                  grid-template-areas:
+                  "advert content"
+                  "advert content"
+                  "advert content";
+                }
+              } /*Make the page responsive*/
+            #navbar{
+              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+              font-size: 17px;
+            }
+            #navbar ul{
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+            }
+            #navbar ul li{
+              list-style: none;
+              
+            }
+            #navbar ul li a{
+              text-decoration: none;
+              display: block;
+              border-top: 1px solid black;
+              border-left: 5px solid #79d2a6;
+              padding-top: 10px;
+              padding-bottom: 10px;
+              padding-left: 10px;
+              padding-right: 10px;
+              padding: 15px 15px 15px 15px;
+              color: #4d4d4d;
+            }
+            #navbar ul li a:hover{
+              background-color: #79d2a6;
+              color: black;
+            }
+            .nav-link{
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+           }
+           .nav-link li a{
+             text-decoration: none;
+           }
+            .main-section{
+              font-size: 15px;
+              font-family:'Arial';
+              color: #4d4d4d;
+            }
+            #introduction{
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 25px;
+              color: #333333;
+            }
+            #what_you_should_know_already{
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 20px;
+              color: #333333;
+            }
+            #identifying_the_features_of_java{
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 20px;
+              color: #333333;
+            }
+            #components{
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 20px;
+              color: #333333;
+            }
+            #java_architecture{
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 20px;
+              color: #333333;
+            }
+            #reference{
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 20px;
+              color: #333333;
+            }
+            #hello_world{
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 20px;
+              color: #333333;
+            }
+            #variable{
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 20px;
+              color: #333333;
+            }
+            .code{
+              font-family: Bell MT;
+              font-size: 15px;
+              padding-left: 30px;
+            }
+            #method{
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 20px;
+              color: #333333;
+            }
+            #example{
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 20px;
+              color: #333333;
+            }
+            header{
+              font-size: 18px;
+              padding: 0 15px 0 15px;
+              color: #333333;
+            }
+          
+        </style>
+    </head>
+    <body>
+      <main id="main-doc">
+        <div class="container">
+          <div class="item1"></div>
+          <div class="item2">
+            <nav id="navbar">
+              <header>
+                <h2>Java Documentation</h2>
+              </header>
+              <ul>
+                <li><a class="nav-link" href="#introduction">Introduction</a></li>
+                <li><a class="nav-link" href="#what_you_should_know_already">What you should already know</a></li>
+                <li><a class="nav-link" href="#identifying_the_features_of_java">Identifying the Features of Java</a></li>
+                <li><a class="nav-link" href="#java_architecture">Java Architecture</a></li>
+                <li><a class="nav-link" href="#components">Components</a></li>
+                <li><a class="nav-link" href="#hello_world">Hello world</a></li>
+                <li><a class="nav-link" href="#variable">Variable</a></li>
+                <li><a class="nav-link" href="#method">Methods</a></li>
+                <li><a class="nav-link" href="#example">Example</a></li>
+                <li><a class="nav-link"  href="#reference">Reference</a></li>
+              </ul>
+            </nav>     
+          </div>
+          <div class="item3">
+            <section  class="main-section">
+              <div>
+                <h2 id="introduction">Introduction</h2>
+                <p>The principles of object-oriented programming, such as modularity and reusability, are quite popular as they help in reducing
+                  the complexity of programs. In order to implement such principles in real world applications, such as library management 
+                  and inventory management, you need to make use of an object-oriented language, such as Java.</p>
+              </div>
+            </section>
+            <section  class="main-section">
+              <div>
+                <h3 id="what_you_should_know_already">What you should already know</h3>
+                <p>This guide assumes you have the following basic background</p>
+                <ul>
+                  <li>A general understanding Logic building and effective problem solving</li>
+                  <li>Database knowledge such as SQL Server, MySQL, MongoDB etc.</li>
+                </ul> 
+              </div> 
+            </section>
+            <section  class="main-section">
+              <div>
+                <h3 id="identifying_the_features_of_java">Identifying the Features of Java</h3>
+                <p>Java porvides powerful Features that make it a popular and widely used programming language. Some of the Features are:</p>
+                <ul>
+                  <li><strong>Simple</strong>: When an object is created, memory needs to allocated. Later on, when the object is no longer required,
+                      the allocated memory to the object should be released. In Java memory allocation and deallocation happens automatically. 
+                      The process of automatically deallocating memory is called <em>garbage collection.</em></li><br/>
+                  <li><strong>Object-oriented</strong>: Java is an Object-oriented language and it incorporates the various characteristics of an object-oriented 
+                      language, such as inheritance and polymorphism. in Java the entire program code must be encapsulated inside a class.</li><br/>
+                  <li><strong>Platform independence</strong>: In Java, when compile an erro-free code, the compiler converts the program to a platform independent
+                      code, known as the <em>bytecode</em>. Therfore, the <em>Java Virtual Machine</em>(JVM) interprets this bytecode into the machine code that can be run 
+                      on that machine. converting a Java program into bytecode makes a Java program platform independent because any computer installed with the 
+                      JVM can interpret and run the bytecode.</li><br/>
+                  <li><strong>Portable</strong>: Portability refers to the ability of a program to run on any platform without changing the source code of the program.
+                      The program developped on a computer can run on another computer, which might have a different operating system. Java enables the creation of 
+                      cross-platform programs by converting the programs into Java bytecode.</li><br/>
+                  <li><strong>Distributed</strong>: Java can be used for the development of those applications that can be distributed on multiple machines 
+                      in a network, such as the Internet. These applications can be used by multiple users from multiple machines in a network. For this pourpose,
+                      Java support the various Internet protocols, such as Transmission Control Protocol and Internet Protocol(TCP/IP) and Hyper Text Transfer Protocol(HTTP).
+                  </li><br/>
+                  <li><strong>Secure</strong>: Java has built-in features that ensure that a Java program gains access to only those resources 
+                      of a computer that are essential of its execution. This ensure that a Java program executing on a particular machine does not harm it.</li><br/>
+                  <li><strong>Robust</strong>: Java provide various features, such as memory management and exception handling, which make it a robust programming language.
+                      These features ensure that the Java application run securely and effectively on a machine and do not crash a machine if minor errors are encourtered.</li><br/>
+                  <li><strong>Multithreded</strong>: Java provide the concept of multithreding that allows a program to simultaneously execute multiple tasks by using threads.
+                      A <em>thread</em> is samllest unit of execution in a Java program.</li><br/>
+                </ul>
+              </div>
+            </section>
+            <section  class="main-section">
+              <div>
+                  <h3 id="java_architecture">Java Architecture</h3>
+                  <p>The Java Archnitecture defines the components that are essential to carry out the creation and execution of code written in the 
+                  Java programming language. The various components of th Java architecture are:</p>
+                  <ul>
+                      <li>Source File</li>
+                      <li>Class File</li>
+                      <li>Java Virtual Machine(JVM)</li>
+                      <LI>Application Programming Interface (API)</LI>
+                  </ul>
+                  <p>The various components in the Java architecture are shown in the following figure.</p>
+                  <img src="JavaArchitecture.jpg"  alt="Java Architecture">
+              </div>
+            </section>
+            <section  class="main-section">
+              <div>
+                <h3 id="components">Components</h3>
+                  <p><strong>Source File</strong>: Java is robust programming language that enables developers to build a wide variety of applicatios for 
+                    pourposes. In order to write a Java program or an application, you need to write certain code. A Java application contains the source 
+                    code tha enables an application to provide its desired functionalities. This source code is saved in a source file with the extension, .java.
+                  </p>
+                  <p><strong>Class File</strong>: Once created, a .java file is complied to generate the .class file. A class file contains the bytecode that is generated 
+                      by the compiler. Further, this class file can be executed by any machine that supports the Java Runtime Environment(JRE).
+                  </p>   
+                  <p><strong>JVM</strong>: The JVM is an application that is resposible for execution Java programs on a computer. It resides insides in the Random 
+                    Access Memory (RAM) and is specific for every platform, such as Sun and Macintoch. The bytecode generated during the compilationof a programis the machine 
+                    language of the JVM. JVM is resposible for executing the bytecode and generating the machine specific code for the machine on which the Java 
+                    program needs to be executed.</p>
+                  <p>The major components of JVM are:</p>
+                      <ul>
+                        <li>Class loader</li>
+                        <li>Byte code veridier</li>
+                        <li>Java Virtual Machine and Just in Time(JIT) compiler</li>
+                      </ul>
+              </div>
+            </section>
+            <section class="main-section">
+              <div>
+                <h3 id="hello_world">Hello world</h3>
+                <code class="code">
+                  public class hello{<br>
+                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp public static void main(String[] args){<br>
+                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp System.out.println("Hello World"); <br>
+                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp}<br>
+                   &nbsp &nbsp &nbsp &nbsp &nbsp }
+                </code>
+              </div>
+            </section>
+            <section class="main-section">
+              <div>
+                <h3 id="variable">Variable</h3>
+                <p>A variable is used essentially for the storage of varying of data. The main use of a variable is to store and manipulate data or values in Java Programs.
+                A variable represents a name that refers to a memory location where some value is stored.</p>
+                <p>The following code show how to declare variables</p>
+                <code class="code">
+                  int choice; //single declaration of the same type <br>
+                  &nbsp &nbsp &nbsp &nbsp int num1, num2; //multiple declaration of the same type
+                </code>
+                <p>The following code snippet show how to assign value to a variable</p>
+                <code class="code">
+                  int num1 = 5; //single declaration of the same type <br>
+                </code>
+                <p>You can also assign the same value to more than one variable in a single statement. The following code snippet shows the assignment of the same value to more than one variable:</p>
+                <code>
+                  &nbsp &nbsp &nbsp &nbsp int num1, num2 = 5; //multiple declaration of the same type
+                </code>
+                
+              </div>
+            </section>
+            <section class="main-section">
+              <div>
+                <h3 id="method">Methods</h3>
+                <p>A <em>method</em> is a set of statements that is intended to perform a specific task. For example, a <em>compute()</em> method can be used for computing the score. Moreover, methods provide encapsulation and are also to refer to the data members and access them. A method consist of two parts, method declaration and method body.</p>
+                <p>Example of a method</p>
+                <code class="code">
+                  public void Calculate(){<br>
+                    &nbsp &nbsp &nbsp &nbsp int num1, num2, result;<br>
+                    &nbsp &nbsp &nbsp &nbsp num1 = 5;<br>
+                    &nbsp &nbsp &nbsp &nbsp  num2 = 8;<br>
+                    &nbsp &nbsp &nbsp &nbsp  Resul = sum(num1,num2)<br>
+                  }
+                </code>
+              </div>
+            </section>
+            <section class="main-section">
+              <div>
+                <h3 id="example">Example</h3>
+                <p>Here is a simple example a java program</p>
+                <code class="code">
+                  import java.util.Scanner;
+                  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp public class hello{<br>
+                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Scanner scan = new Scanner.System.in();<br>
+                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp public void Calculate(){<br>
+                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  int num1 = 5, num2 = 8, Result;<br>
+                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Result = num1 + num2;<br>
+                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp}<br>
+                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp public static void main(String[] args){<br>
+                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp hello obj = new hello(); <br>
+                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp obj.Calculate(); <br>
+                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp}<br>
+                   &nbsp &nbsp &nbsp &nbsp &nbsp }
+                </code>
+              </div>
+            </section>
+            <section  class="main-section">
+              <div>
+                  <h3 id="reference">Reference</h3>
+                  <p>All the documentation of this page is taking from <a class="lin" href=" https://docs.oracle.com/javase/tutorial/index.html" target="_blank">Oracle Tutorials</a></p>
+              </div>
+            </section>
+          </div>
+                      <!--<div class="item4">footer</div>-->
+        </div>
+      </main>
+    </body>
+</html>
+<!-- 
+  2 - Ask about the right alignment of the content?
+  3- How to build a menu so that when you hover or click on it the links of the pages will appier?
+  4- what is the difference between @media query and @media screen??
+  Question remaining: 8 - 15 
+-->

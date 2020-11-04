@@ -1,0 +1,223 @@
+<!DOCTYPE HTML>
+<html>
+    <head><title>Technical Documentation Testing</title>
+        <style>
+          *{
+            box-sizing: border-box;
+          }
+               .container {
+                  min-height: 300px;
+                  width: 100%;
+                  background: LightGray;
+                  display: grid;
+                  grid-template-columns: auto 2fr;
+                  grid-template-rows: auto 2fr auto;
+                  grid-gap: 5px;
+                  grid-template-areas:
+                    "advert content"
+                    "advert content"
+                    "advert content";
+                }
+                .item1 {
+                  background: white;
+                  grid-area: content;
+                }
+                .item2 {
+                  background: white;
+                  grid-area: advert;
+                  grid-template-rows: 30px 30px 30px 30px auto;
+                  display: grid;
+                }
+                .item3 {
+                  background: white;
+                  grid-area: content;
+                  margin-left: 35px;
+                }
+                
+                /*.item4 {
+                  background: white;
+                  grid-area: footer;
+                }    */          
+                .itemOne{
+                  background: white;
+                  padding: 15px;
+                }
+                
+                .itemTwo{
+                  background:  white;
+                  padding: 15px;
+                }
+                .itemThree{
+                  background: white;
+                  padding: 15px;
+                }
+                .itemfour{
+                  background: white;
+                  padding: 15px;
+                }
+                .itemfive{
+                  background: white;
+                  padding: 15px;
+                }
+                li{
+                  list-style-type: square;
+                }
+                img{
+                  max-width: 100%;
+                  height: auto;
+                  display: block;
+                }
+              .link{
+                color: green;
+                text-decoration: none;
+              }
+              .link:hover{
+                color: black;
+                text-decoration: underline;
+              }
+              .sep{
+                font-size: 23px;
+                text-decoration: none;
+                display: auto;
+                color: black;
+              }
+              .sep:link, .sep.visited{
+                color: black;
+                text-decoration: none;
+              }
+              .sep:active{
+                color: black;
+                background-color: none;
+              }
+              #main-doc{
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                font-size: 1.2em;
+                background: white;
+                text-align: justify;
+              }
+              .main-section{
+
+              }
+              #navbar{
+                background: white;
+                padding: 15px;
+                border-top: 1px solid black;
+            } 
+        </style>
+    </head>
+    <body>
+      <main id="main-doc">
+        <div class="container" >
+         <!-- <div class="item1"></div>-->
+          <div class="item2">
+            <div><h2>Java Documentation</h2>
+                <div id="navbar" class="itemOne"><a class="sep" href="#C1">Introduction</a></div>
+                <div id="navbar" class="itemTwo"><a class="sep" href="#C2">What you should already know</a></div>
+                <div id="navbar" class="itemThree"><a class="sep" href="#C3">Identifying the Features of Java</a></div>
+                <div id="navbar" class="itemfour"><a class="sep" href="#C4">Java Architecture</a></div>
+                <div id="navbar" class="itemfive"><a class="sep" href="#C5">Reference</a></div>
+            </div>
+           <!-- <div><h2>Java Documentation</h2>
+                <div style="border-top: 1px solid black;" class="itemOne"><a class="sep" href="#C1">Introduction</a></div>
+                <div style="border-top: 1px solid black;" class="itemTwo"><a class="sep" href="#C2">What you should already know</a></div>
+                <div style="border-top: 1px solid black;" class="itemThree"><a class="sep" href="#C3">Identifying the Features of Java</a></div>
+                <div style="border-top: 1px solid black;" class="itemfour"><a class="sep" href="#C4">Java Architecture</a></div>
+                <div style="border-top: 1px solid black;" class="itemfive"><a class="sep" href="#C5">Reference</a></div> 
+            </div> -->          
+          </div>
+          <div class="item3">
+            <section  class="main-section">
+              <h3 id="C1">Introduction</h3>
+              <p>The principles of object-oriented programming, such as modularity and reusability, are quite popular as they help in reducing
+                the complexity of programs. In order to implement such principles in real world applications, such as library management 
+                and inventory management, you need to make use of an object-oriented language, such as Java.</p>
+            </section>
+            <section  class="main-section">
+              <h3 id="C2">What you should already know</h3>
+              <p>This guide assumes you have the following basic background</p>
+              <ul>
+                <li>A general understanding Logic building and effective problem solving</li>
+                  <li>Database knowledge such as SQL Server, MySQL, MongoDB etc.</li>
+              </ul>  
+            </section>
+            <section  class="main-section">
+              <div>
+                <h3 id="C3">Identifying the Features of Java</h3>
+                <p>Java porvides powerful Features that make it a popular and widely used programming language. Some of the Features are:</p>
+                <ul>
+                  <li><strong>Simple</strong>: When an object is created, memory needs to allocated. Later on, when the object is no longer required,
+                      the allocated memory to the object should be released. In Java memory allocation and deallocation happens automatically. 
+                      The process of automatically deallocating memory is called <em>garbage collection.</em></li><br>
+                  <li><strong>Object-oriented</strong>: Java is an Object-oriented language and it incorporates the various characteristics of an object-oriented 
+                      language, such as inheritance and polymorphism. in Java the entire program code must be encapsulated inside a class.</li><br>
+                  <li><strong>Platform independence</strong>: In Java, when compile an erro-free code, the compiler converts the program to a platform independent
+                      code, known as the <em>bytecode</em>. Therfore, the <em>Java Virtual Machine</em>(JVM) interprets this bytecode into the machine code that can be run 
+                      on that machine. converting a Java program into bytecode makes a Java program platform independent because any computer installed with the 
+                      JVM can interpret and run the bytecode.</li><br>
+                  <li><strong>Portable</strong>: Portability refers to the ability of a program to run on any platform without changing the source code of the program.
+                      The program developped on a computer can run on another computer, which might have a different operating system. Java enables the creation of 
+                      cross-platform programs by converting the programs into Java bytecode.</li><br>
+                  <li><strong>Distributed</strong>: Java can be used for the development of those applications that can be distributed on multiple machines 
+                      in a network, such as the Internet. These applications can be used by multiple users from multiple machines in a network. For this pourpose,
+                      Java support the various Internet protocols, such as Transmission Control Protocol and Internet Protocol(TCP/IP) and Hyper Text Transfer Protocol(HTTP).
+                  </li><br>
+                  <li><strong>Secure</strong>: Java has built-in features that ensure that a Java program gains access to only those resources 
+                      of a computer that are essential of its execution. This ensure that a Java program executing on a particular machine does not harm it.</li><br>
+                  <li><strong>Robust</strong>: Java provide various features, such as memory management and exception handling, which make it a robust programming language.
+                      These features ensure that the Java application run securely and effectively on a machine and do not crash a machine if minor errors are encourtered.</li><br>
+                  <li><strong>Multithreded</strong>: Java provide the concept of multithreding that allows a program to simultaneously execute multiple tasks by using threads.
+                      A <em>thread</em> is samllest unit of execution in a Java program.</li>
+                </ul><br>
+              </div>
+            </section>
+            <section  class="main-section">
+              <div>
+                  <h3 id="C4">Java Architecture</h3>
+                  <p>The Java Architecture defines the components that are essential to carry out the creation and execution of code written in the 
+                  Java programming language. The various components of th Java architecture are:</p>
+                  <ul>
+                      <li>Source File</li>
+                      <li>Class File</li>
+                      <li>Java Virtual Machine(JVM)</li>
+                      <LI>Application Programming Interface (API)</LI>
+                  </ul>
+                  <p>The various components in the Java architecture are shown in the following figure.</p>
+                  <img src="JavaArchitecture.jpg"  alt="Java Architecture">
+              </div>
+            </section>
+            <section  class="main-section"> <!--Try to solve this as the requirement is every section must have a header that describe that section you can merge this section to the subsequent section-->
+              <div>
+                  <p><strong>Source File</strong>: Java is robust programming language that enables developers to build a wide variety of applicatios for 
+                    pourposes. In order to write a Java program or an application, you need to write certain code. A Java application contains the source 
+                    code tha enables an application to provide its desired functionalities. This source code is saved in a source file with the extension, .java.
+                  </p>
+                  <p><strong>Class File</strong>: Once created, a .java file is complied to generate the .class file. A class file contains the bytecode that is generated 
+                      by the compiler. Further, this class file can be executed by any machine that supports the Java Runtime Environment(JRE).
+                  </p>   
+                  <p><strong>JVM</strong>: The JVM is an application that is resposible for execution Java programs on a computer. It resides insides in the Random 
+                    Access Memory (RAM) and is specific for every platform, such as Sun and Macintoch. The bytecode generated during the compilationof a programis the machine 
+                    language of the JVM. JVM is resposible for executing the bytecode and generating the machine specific code for the machine on which the Java 
+                    program needs to be executed.</p>
+                  <p>The major components of JVM are:</p>
+                      <ul>
+                        <li>Class loader</li>
+                        <li>Byte code veridier</li>
+                        <li>Java Virtual Machine and Just in Time(JIT) compiler</li>
+                      </ul>
+              </div>
+            </section>
+            <section  class="main-section">
+              <div>
+                  <h3 id="C5">Reference</h3>
+                  <p>All the documentation of this page is taking from <a class="link" href=" https://docs.oracle.com/javase/tutorial/index.html" target="_blank">Oracle Tutorials</a></p>
+              </div>
+            </section>
+                      <!--<div class="item4">footer</div>-->
+        </div>
+      </div>
+      </main>
+    </body>
+</html>
+<!--Make the page resposible and also make it in a way so that when add media querie on the page-->
+<!--Can I put item in a div element?--> 
+<!--Questions not answers are: 4, 10, 11, 14, 15   -->
